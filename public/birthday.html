@@ -28,6 +28,25 @@
 @keyframes catBob{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-7px) rotate(3deg)}}
 @media(max-width:560px){.things{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.thing{height:150px}.face{padding:10px}.cat-wish{padding:17px 14px}}
 
+/* You section: high-contrast sequential reveal treatment */
+.chapter[data-chapter="5"] .title{margin-bottom:12px}
+.chapter[data-chapter="5"] #thingsCount{font-size:14px;letter-spacing:.02em;color:#895165;background:#fff0f4;border:1px solid #f2cbd7;border-radius:999px;padding:10px 16px;width:fit-content;margin:0 auto 24px}
+.chapter[data-chapter="5"] .things{width:min(100%,660px);grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.chapter[data-chapter="5"] .thing{height:174px;min-width:0;position:relative;opacity:1;transition:transform .25s,opacity .25s;overflow:visible}
+.chapter[data-chapter="5"] .thing .front{background:linear-gradient(145deg,#fff9fb 0%,#fbe4ec 100%);border:1px solid #ecc1d0;box-shadow:0 9px 24px #8d365615}
+.chapter[data-chapter="5"] .thing .front .symbol{font-size:32px;color:#b54870;margin-bottom:10px}
+.chapter[data-chapter="5"] .thing .front .tap-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#99506b}
+.chapter[data-chapter="5"] .thing.next .front{border:2px solid #c96b8b;box-shadow:0 0 0 5px #d8879a20,0 14px 28px #a7436420;animation:youCardPulse 1.8s ease-in-out infinite}
+.chapter[data-chapter="5"] .thing.locked{opacity:.58;cursor:not-allowed}
+.chapter[data-chapter="5"] .thing.locked .front{background:linear-gradient(145deg,#f7f0f1,#eee4e7);border:1px dashed #d8b8c2;box-shadow:none}
+.chapter[data-chapter="5"] .thing.locked .front:after{content:'♡';position:absolute;top:10px;right:12px;font-size:13px;color:#b68a9a}
+.chapter[data-chapter="5"] .thing.revealed{opacity:1;transform:translateY(-3px)}
+.chapter[data-chapter="5"] .thing.revealed .back{background:linear-gradient(145deg,#fffaf8,#ffe5ed);border:1px solid #e9b1c5;box-shadow:0 12px 28px #a7436418}
+.chapter[data-chapter="5"] #thingsNext{margin-top:26px}
+@keyframes youCardPulse{0%,100%{box-shadow:0 0 0 3px #d8879a18,0 12px 24px #a7436418}50%{box-shadow:0 0 0 7px #d8879a30,0 16px 30px #a7436420}}
+@media(max-width:560px){.chapter[data-chapter="5"] .things{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.chapter[data-chapter="5"] .thing{height:158px}}
+
+
 
 
 /* Memories chapter: official Drama Queen player */
